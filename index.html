@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Um Convite Especial para Você</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:wght@300;400&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f3f3;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 3.5em;
+            color: #e74c3c;
+            margin-bottom: 20px;
+        }
+
+        .fotos {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 30px;
+        }
+
+        .foto {
+            max-width: 45%;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .foto:hover {
+            transform: scale(1.05);
+        }
+
+        .mensagem {
+            background-color: #fff5f5;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(231, 76, 60, 0.1);
+            margin-bottom: 30px;
+            font-size: 1.1em;
+            line-height: 1.8;
+        }
+
+        .formulario {
+            background-color: #e74c3c;
+            color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .formulario h2 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        select, button {
+            margin-top: 15px;
+            padding: 12px 20px;
+            font-size: 1em;
+            border: none;
+            border-radius: 5px;
+        }
+
+        select {
+            width: 80%;
+            max-width: 300px;
+            background-color: #fff;
+            color: #333;
+        }
+
+        button {
+            background-color: #fff;
+            color: #e74c3c;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #f8d7da;
+            transform: translateY(-2px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-style: italic;
+            color: #888;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2.5em;
+            }
+
+            .fotos {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .foto {
+                max-width: 90%;
+                margin-bottom: 20px;
+            }
+
+            .formulario h2 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Meu Amor,</h1>
+        </header>
+        
+        <main>
+            <section class="fotos">
+                <img src="foto1.jpg" alt="Relaxar" class="foto">
+                <img src="foto2.jpg" alt="Tomar um vinho" class="foto">
+            </section>
+            
+            <section class="mensagem">
+                <p>
+                    Oi minha Gostosa,
+                </p>
+                <p>
+                    Cada momento ao seu lado é uma jornada mágica, repleta de amor, risos e felicidade. 
+                    Hoje, quero convidar você para mais uma aventura juntos.
+                </p>
+                <p>
+               
+                    Gostaria de passar mais essa noite ao seu lado, aproveitar para descansar e relaxar
+                    em meio a toda essa correria de responsabilidade e estresse.
+                </p>
+                <p>
+                    Te convido para que hoje 24-08-2024 possamos nos amar e aproveitar mais uns momentos a dois.
+                </p>
+                <p>
+                    Sua presença ilumina minha vida de uma maneira que palavras não podem expressar. 
+                    Espero ansiosamente por sua resposta e pela chance de criar mais uma memória 
+                    maravilhosa ao seu lado.
+                </p>
+                <p>
+                    Com todo o meu amor, Maverton Rodrigo!
+                </p>
+                <p>
+                   
+                </p>
+            </section>
+            
+            <section class="formulario">
+                <h2>Você aceita meu convite?</h2>
+                <form action="https://formspree.io/f/mzzpkzoz" method="POST">
+                    <label for="resposta">Sua resposta:</label>
+                    <select name="resposta" id="resposta" required>
+                        <option value="">Escolha uma opção</option>
+                        <option value="sim">Sim, com todo o meu coração!</option>
+                        <option value="sim">É claro, o que mais quero é está ao seu lado.</option>
+                    </select>
+                    <button type="submit">Enviar Resposta</button>
+                </form>
+            </section>
+        </main>
+        
+        <footer>
+            <p>Criado com amor para Érica Caroline</p>
+        </footer>
+    </div>
+</body>
+</html>
